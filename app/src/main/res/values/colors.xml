@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="toolBar_color">#7bdc79</color>
+    <color name="md_white_1000">#ffffff</color>
+    <color name="grey">#e0e0e0</color>
+
+
+    <color name="btn_disable">#424242</color>
+    <color name="btn_default">#fd5503</color>
+    <color name="btn_pressed">#bf360c</color>
+
+    <color name="btn_disable_blue">#424242</color>
+    <color name="btn_default_blue">#74aefe</color>
+    <color name="btn_pressed_blue">#5f90d4</color>
+    <color name="black">#000</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="icons_tint_color_blue">#91bdfe</color>
+    <color name="blue_theme">#d471a6ef</color>
+    <color name="blue_back_info">#74aefe</color>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+   <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+    <LinearLayout
+        android:id="@+id/layoutloginmain"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_login">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp">
+            <ImageView
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center_horizontal"
+                android:src = "@drawable/logo_icon"/>
+
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/edt_email"
+                android:layout_gravity="center"
+                android:background="@drawable/edt_shape_login"
+                android:padding="10dp"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:text="w@w.w"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/user_icon"
+                android:hint="@string/email_hint" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/edt_password"
+                android:layout_gravity="center"
+                android:background="@drawable/edt_shape_login"
+                android:padding="10dp"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/locker_icon"
+                android:text="w"
+                android:layout_marginTop="10dp"
+                android:ems="10" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_password_error"
+                android:id="@+id/txtView_login_error"
+                android:textSize="15sp"
+                android:textColor="#ffff353d"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/txtView_login_forgetpassword"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:text="@string/forgot_the_password"/>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/enter"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/md_white_1000"
+                android:background="@drawable/btn_selector"
+                android:id="@+id/btn_log_in" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/register_me"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/md_white_1000"
+                android:background="@drawable/btn_selector"
+                android:id="@+id/btn_registration" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</FrameLayout>

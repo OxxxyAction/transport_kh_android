@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_photos"
+            android:icon="@drawable/user_icon"
+            android:title="@string/nav_personal_area" />
+        <item
+            android:id="@+id/nav_movies"
+            android:icon="@drawable/star_icon"
+            android:title="@string/nav_favorites" />
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/fire_icon"
+            android:title="@string/nav_crash" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings_icon"
+            android:title="@string/nav_settings" />
+    </group>
+</menu>

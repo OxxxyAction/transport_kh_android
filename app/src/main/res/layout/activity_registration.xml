@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/registrationToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:background="@color/toolBar_color"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:transitionName="actionBar">
+
+        <Button
+            android:id="@+id/btn_back_registration_activity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/arrow_back"
+            android:scaleType="fitXY"
+            android:backgroundTint="@color/md_white_1000"
+            android:layout_gravity="start|center_horizontal"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/md_white_1000"
+            android:text="@string/toolbar_app_title"
+            android:textSize="30sp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/grey"
+        android:id="@+id/lay_registraion_content">
+
+
+
+
+        <ScrollView
+            android:id="@+id/scrollViewReg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusableInTouchMode="true" >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registration_hint"
+                    android:id="@+id/textViewLoginAuth"
+                    android:textSize="30sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fill_registration_fields"
+                    android:id="@+id/txtView_login_reg_description"
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/radio_sex"
+                    android:paddingRight="20dp">
+
+                    <RadioButton
+                        android:id="@+id/radioSexMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/male"/>
+                    <RadioButton
+                        android:id="@+id/radioSexFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/female"
+                        />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/you_must_fill_sex"
+                    android:id="@+id/txtView_reg_sex_err"
+                    android:textSize="15sp"
+                    android:textColor="#ffff353d"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"/>
+
+                <!--<EditText
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/edtRegName"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edt_shape_login"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="ФИО" />
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/txtViewRegErrName"
+                    android:textSize="15sp"
+                    android:textColor="#ffff353d"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"/>-->
+
+
+
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/edt_reg_email"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edt_shape_login"
+                    android:paddingLeft="10dp"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/email_hint"
+                    />
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/you_must_fill_email"
+                    android:id="@+id/txtView_reg_email_error"
+                    android:textSize="15sp"
+                    android:textColor="#ffff353d"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"/>
+
+
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/edt_reg_password"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edt_shape_login"
+                    android:paddingLeft="10dp"
+                    android:hint="@string/password_hint"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="10dp"
+                    android:ems="10" />
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password_must_be_equals"
+                    android:id="@+id/txtView_reg_password_err"
+                    android:textSize="15sp"
+                    android:textColor="#ffff353d"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/edt_reg_password_re"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edt_shape_login"
+                    android:paddingLeft="10dp"
+                    android:hint="@string/repeat_password"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="10dp"
+                    android:ems="10" />
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password_must_be_equals"
+                    android:id="@+id/txtView_reg_password_re_err"
+                    android:textSize="15sp"
+                    android:textColor="#ffff353d"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/edt_reg_date_of_birth"
+                    android:layout_gravity="center"
+                    android:editable="false"
+                    android:clickable="true"
+                    android:background="@drawable/edt_shape_login"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/date_of_birth" />
+
+
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_of_birth_err"
+                    android:id="@+id/txtView_reg_date_err"
+                    android:textSize="15sp"
+                    android:textColor="#ffff353d"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/register_me"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/md_white_1000"
+                    android:background="@drawable/btn_selector"
+                    android:id="@+id/btn_reg_me" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

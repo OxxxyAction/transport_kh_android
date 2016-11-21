@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/registrationToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:background="@color/toolBar_color"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:transitionName="actionBar">
+
+        <Button
+            android:id="@+id/btn_back_route_activity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/arrow_back"
+            android:scaleType="fitXY"
+            android:backgroundTint="@color/md_white_1000"
+            android:layout_gravity="start|center_horizontal"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/md_white_1000"
+            android:text="@string/toolbar_app_title"
+            android:textSize="30sp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:clickable="true"
+            android:layout_margin="20dp"
+            android:background="@color/btn_default_blue">
+
+            <Button
+                android:id="@+id/btn_trolleybus_table"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/md_white_1000"
+                android:background="@drawable/btn_blue_selector"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="@string/trolleybus" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="right|bottom"
+                android:background="@drawable/trolleybus_icon"/>
+        </FrameLayout>
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView"
+        android:layout_marginRight="10dp"
+        android:layout_margin="10dp"
+        android:queryHint="@string/find_by_number"
+        android:iconifiedByDefault="false"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview_trolleybus"/>
+
+</LinearLayout>

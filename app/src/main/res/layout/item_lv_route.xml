@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtView_item_route_number"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="#46"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_weight="5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtView_item_route_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ot: gagarina"/>
+
+        <TextView
+            android:id="@+id/txtView_item_route_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="do: ploshadi svobodi"/>
+
+        <TextView
+            android:id="@+id/txtView_item_route_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Cost: 5shekeley"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

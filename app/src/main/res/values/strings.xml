@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Transport_KH</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="APP_ID" templateMergeStrategy="preserve" translatable="false">6F67F7DF-1359-473D-FFDC-AF1EA8654F00</string>
+    <string name="SECRET_KEY" templateMergeStrategy="preserve" translatable="false">617719FC-7D26-7F70-FF28-577960C33D00</string>
+    <string name="appVersion_Backendless">v1</string>
+
+    <string name="toolbar_app_title">Transport_KH</string>
+    <string name="email_hint">Электронная почта</string>
+    <string name="password_hint">Пароль</string>
+    <string name="login_password_error">Поля \"Электронная почта\" или \"Пароль\" не могут быть пустыми</string>
+    <string name="registration_hint">Регистрация</string>
+    <string name="enter">Вход</string>
+    <string name="forgot_the_password">Забыли пароль?</string>
+    <string name="auth">Авторизация</string>
+    <string name="fill_requirement_fields">Для входа в приложение необходимо заполнить соответствующие поля</string>
+    <string name="fill_registration_fields">Для регистрации в приложении заполните соответствующие поля</string>
+    <string name="male">Мужчина</string>
+    <string name="female">Женщина</string>
+    <string name="repeat_password">Повторите пароль</string>
+    <string name="password_must_be_equals">Пароли должны совпадать</string>
+    <string name="date_of_birth">Дата рождения</string>
+    <string name="date_of_birth_err">Укажите дату рождения</string>
+    <string name="register_me">ЗАРЕГИСТРИРОВАТЬСЯ</string>
+    <string name="you_must_fill_password">Поле \"Пароль\" не может быть пустым</string>
+    <string name="you_must_fill_password_re">Поле \"Повторите пароль\" не может быть пустым</string>
+    <string name="loading">Загрузка</string>
+    <string name="reg_complete">Регистрация прошла успешно!</string>
+    <string name="something_goes_wrong">Не удалось соединиться с сервером, попробуйте позже</string>
+    <string name="you_must_fill_email">Поле \"Электронная почта\" не может быть пустым</string>
+    <string name="you_must_fill_sex">Укажите свой пол</string>
+    <string name="wrong_email_format">Указан неверный формат почты</string>
+    <string name="wrong_email_or_password">Почта или пароль указаны неверно</string>
+    <string name="tabling">Расписание</string>
+    <string name="trolleybus">Тролейбус</string>
+    <string name="bus">Автобус</string>
+    <string name="tram">Трамвай</string>
+    <string name="show_route">Показать маршрут</string>
+    <string name="left_feedback">Оценить маршрут</string>
+    <string name="stations">Станции</string>
+    <string name="back_to_stations">Назад к станциям</string>
+    <string name="time_table_title">Время отправления</string>
+    <string name="after16">После 16.01</string>
+    <string name="do16">12.01-16.00</string>
+    <string name="do12">7.01-12.00</string>
+    <string name="do7">До 7.00</string>
+    <string name="title_activity_map_activity_test">Map</string>
+    <string name="find_your_route">Найдите свой маршрут</string>
+    <string name="nav_home">На главную</string>
+    <string name="nav_personal_area">Личный кабинет</string>
+    <string name="nav_favorites">Избранное</string>
+    <string name="nav_crash">Последние ДТП</string>
+    <string name="nav_settings">Настройки</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="menu_title">Меню</string>
+    <string name="title_activity_maps_activity_new">Map</string>
+    <string name="find_by_number">Поиск по номеру</string>
+    <string name="schedule">Посмотреть расписание</string>
+</resources>
