@@ -1,0 +1,2 @@
+# transport_kh_android
+Оброблені дані з сайту DaniMist знаходяться у https://github.com/OxxxyAction/transport_kh_android/blob/master/app/src/main/assets/dani_mist.json і використовуються в файлах https://github.com/OxxxyAction/transport_kh_android/blob/master/app/src/main/java/com/transport_kh/transport_kh/activities/TramActivity.java та https://github.com/OxxxyAction/transport_kh_android/blob/master/app/src/main/java/com/transport_kh/transport_kh/activities/TrolleybusActivity.java
